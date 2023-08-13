@@ -1,0 +1,31 @@
+## Edit this
+api_key: <API_KEY>
+site: datadoghq.com
+
+## Logs 
+logs_enabled: true
+
+## APM
+apm_config:
+  enabled: true
+
+## Process Monitoring
+process_config:
+  process_collection:
+    enabled: true
+
+## Cloud Security Posture Management
+compliance_config:
+  enabled: true
+
+## Cloud Workload Security
+runtime_security_config:
+  enabled: true
+  fim_enabled: true  #file integrity monitoring
+
+## Network Performance Monitoring
+network_config:
+  enabled: true
+
+## View Agent Config from Datadog UI
+inventories_configuration_enabled: true
