@@ -18,7 +18,7 @@ datadog:
 ## Logs 
   logs:
     enabled: true
-    container_collect_all: true
+    containerCollectAll: true
     containerCollectUsingFiles: true
     autoMultiLineDetection: true
 
