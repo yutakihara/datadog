@@ -13,6 +13,14 @@ apm_config:
 process_config:
   process_collection:
     enabled: true
+    
+## Network Performance Monitoring
+network_config:
+  enabled: true
+
+## Universal Service Monitoring
+service_monitoring_config:
+  enabled: true
 
 ## Cloud Security Posture Management
 compliance_config:
@@ -23,9 +31,5 @@ runtime_security_config:
   enabled: true
   fim_enabled: true  #file integrity monitoring
 
-## Network Performance Monitoring
-network_config:
-  enabled: true
 
-## View Agent Config from Datadog UI
-inventories_configuration_enabled: true
+
