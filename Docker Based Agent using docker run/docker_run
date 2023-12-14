@@ -17,6 +17,7 @@ docker run -d --name dd-agent \
 -e DD_RUNTIME_SECURITY_CONFIG_REMOTE_CONFIGURATION_ENABLED=true \
 -v /:/host/root:ro \
 -v /opt/datadog/apm:/opt/datadog/apm \
+-v /opt/datadog-agent/run:/opt/datadog-agent/run:rw \
 -v /proc/:/host/proc/:ro \
 -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro \
 -v /sys/kernel/debug:/sys/kernel/debug \
