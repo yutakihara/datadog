@@ -1,5 +1,6 @@
-# Datadog Agent with Logs, APM, Processes, NPM, Events, System Probe, Security(CSPM+CWS), ClusterAgent, OrchestratorExplorer (Live Containers), Check Runners
-# USM, DSM , Remote config enabled
+## Official Source: https://github.com/DataDog/helm-charts/blob/main/charts/datadog/values.yaml
+# 
+# Datadog Agent with Logs, APM, Processes, NPM, Events, System Probe, Security(CSPM+CWS), ClusterAgent, OrchestratorExplorer (Live Containers), Check Runners, USM, DSM , Remote config enabled
 
 # targetSystem -- Target OS for this deployment (possible values: linux, windows)
 targetSystem: "linux"
