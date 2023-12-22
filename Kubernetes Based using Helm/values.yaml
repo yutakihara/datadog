@@ -25,6 +25,8 @@ datadog:
 
 ## APM
   apm:
+    instrumentation:
+      enabled: true
     portEnabled: true
     port: 8126
     socketEnabled: true
