@@ -1,6 +1,8 @@
 ## Official Source: https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml
 ##
-## Edit this
+## Edit this in file location :
+## Linux: /etc/datadog-agent/datadog.yaml
+## Windows: %ProgramData%\Datadog\datadog.yaml
 api_key: <API_KEY>
 site: datadoghq.com
 
