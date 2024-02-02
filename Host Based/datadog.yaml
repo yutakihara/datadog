@@ -39,6 +39,16 @@ runtime_security_config:
 remote_configuration:
   enabled: true
 
+## Vulnerability Scanning
+sbom:
+ enabled: true
+ container_image:
+  enabled: true
+ host:
+  enabled: true
+container_image:
+  enabled: true
+
 
 
 
