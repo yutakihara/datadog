@@ -1,0 +1,10 @@
+# /etc/datadog-agent/security-agent.yaml file
+runtime_security_config:
+  ## Set to true to enable full CSM Threats.
+  enabled: true
+
+compliance_config:
+  ## Set to true to enable CIS benchmarks for CSPM.
+  enabled: true
+  host_benchmarks:
+    enabled: true
