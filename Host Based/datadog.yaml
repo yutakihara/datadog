@@ -7,6 +7,11 @@ api_key: <API_KEY>
 site: datadoghq.com
 env: <environment>
 
+## Tags https://docs.datadoghq.com/tagging/
+# tags:
+#   - team:infra
+#   - <TAG_KEY>:<TAG_VALUE>
+
 ## Logs 
 logs_enabled: true
 
@@ -42,7 +47,7 @@ runtime_security_config:
 remote_configuration:
   enabled: true
 
-## Vulnerability Scanning
+## SBOM + CSM Vulnerabilities (CSM Pro) (Only Linux)
 sbom:
  enabled: true
  container_image:
@@ -51,7 +56,4 @@ sbom:
   enabled: true
 container_image:
   enabled: true
-
-
-
 
