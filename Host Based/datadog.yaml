@@ -5,6 +5,7 @@
 ## Windows: %ProgramData%\Datadog\datadog.yaml
 api_key: <API_KEY>
 site: datadoghq.com
+env: <environment>
 
 ## Logs 
 logs_enabled: true
