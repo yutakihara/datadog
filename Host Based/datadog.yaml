@@ -41,7 +41,7 @@ compliance_config:
 ## Cloud Workload Security
 runtime_security_config:
   enabled: true
-  fim_enabled: true  #file integrity monitoring
+  fim_enabled: true  #file integrity monitoring (Beta on Windows)
 
 ## Remote Configuration
 remote_configuration:
