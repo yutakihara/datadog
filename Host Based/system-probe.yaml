@@ -1,8 +1,8 @@
 runtime_security_config:
  ## Set to true to enable full Cloud Workload Security.
  enabled: true
- fim_enabled: true
-
+ fim_enabled: true #Beta for Windows
+ 
 remote_configuration:
   enabled: true
 
