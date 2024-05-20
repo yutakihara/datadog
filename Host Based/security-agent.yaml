@@ -2,6 +2,7 @@
 runtime_security_config:
   ## Set to true to enable full CSM Threats.
   enabled: true
+  fim_enabled: true #Beta on Windows
 
 compliance_config:
   ## Set to true to enable CIS benchmarks for CSPM.
