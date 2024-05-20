@@ -2,6 +2,10 @@ runtime_security_config:
  ## Set to true to enable full Cloud Workload Security.
  enabled: true
 
- remote_configuration:
+remote_configuration:
   enabled: true
 
+service_monitoring_config:
+  enabled: true
+  process_service_inference:
+    enabled: true
