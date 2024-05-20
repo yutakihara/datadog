@@ -47,7 +47,7 @@ runtime_security_config:
 remote_configuration:
   enabled: true
 
-## SBOM + CSM Vulnerabilities (CSM Pro) (Only Linux)
+## SBOM + CSM(container,host) Vulnerabilities (CSM Pro) (Only Linux)
 sbom:
  enabled: true
  container_image:
