@@ -41,9 +41,6 @@ spec:
       enabled: true
     usm:
       enabled: true
-    dogstatsd:
-      unixDomainSocketConfig:
-        enabled: true
     otlp:
       receiver:
         protocols:
