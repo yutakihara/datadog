@@ -24,6 +24,15 @@ spec:
       enabled: true
     apm:
       enabled: true
+      hostPortConfig:
+        enabled: true
+        hostPort: 8126
+      unixDomainSocketConfig:
+        enabled: true
+    dogstatsd:
+      originDetectionEnabled: true
+      unixDomainSocketConfig:
+        enabled: true
     cspm:
       enabled: true
     cws:
@@ -39,6 +48,8 @@ spec:
       receiver:
         protocols:
           grpc:
+            enabled: true
+          http:
             enabled: true
     remoteConfiguration:
       enabled: true
