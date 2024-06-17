@@ -7,6 +7,13 @@ api_key: <API_KEY>
 site: datadoghq.com
 env: poc
 
+# proxy:
+#   https: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTPS>:<PORT>
+#   http: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTP>:<PORT>
+#   no_proxy:
+#     - <HOSTNAME-1>
+#     - <HOSTNAME-2>
+
 ## Tags https://docs.datadoghq.com/tagging/
 tags:
   - env: poc
