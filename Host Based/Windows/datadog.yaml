@@ -4,13 +4,28 @@
 ## Linux: /etc/datadog-agent/datadog.yaml
 ## Windows: %ProgramData%\Datadog\datadog.yaml
 api_key: <API_KEY>
-site: datadoghq.com
+site: ap1.datadoghq.com # Japan region
 env: <Environment>
 
 ## Tags https://docs.datadoghq.com/tagging/
 #tags:
 #  - env: poc
 #  - team: poc
+
+## @param proxy - custom object - optional
+## @env DD_PROXY_HTTP - string - optional
+## @env DD_PROXY_HTTPS - string - optional
+## @env DD_PROXY_NO_PROXY - space separated list of strings - optional
+## If you need a proxy to connect to the Internet, provide it here (default:
+## disabled). Refer to https://docs.datadoghq.com/agent/proxy/ to understand how to use these settings.
+## For Logs proxy information, refer to https://docs.datadoghq.com/agent/proxy/#proxy-for-logs
+#
+# proxy:
+#   https: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTPS>:<PORT>
+#   http: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTP>:<PORT>
+#   no_proxy:
+#     - <HOSTNAME-1>
+#     - <HOSTNAME-2>
 
 ## Logs 
 logs_enabled: true
@@ -27,19 +42,19 @@ process_config:
     enabled: true
 
 ## Remote Configuration
-remote_configuration:
-  enabled: true
+# remote_configuration:
+#   enabled: true
 
 ## OTLP
-otlp_config:
-  receiver:
-    protocols:
-      grpc:
-        endpoint: localhost:4317
-      http:
-        endpoint: localhost:4318
-  logs:
-    enabled: true
+# otlp_config:
+#   receiver:
+#     protocols:
+#       grpc:
+#         endpoint: localhost:4317
+#       http:
+#         endpoint: localhost:4318
+#   logs:
+#     enabled: true
 
 ## If using Windows EC2 Auto Scaling Group https://docs.datadoghq.com/agent/faq/ec2-use-win-prefix-detection/ 
-ec2_use_windows_prefix_detection: true
+# ec2_use_windows_prefix_detection: true

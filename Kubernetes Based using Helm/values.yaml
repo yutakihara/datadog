@@ -10,7 +10,7 @@ datadog:
   apiKey: <DATADOG_API_KEY> #<<<<<ENTER YOUR API KEY HERE 
   appKey: <DATADOG_APP_KEY> #<<<<<ENTER YOUR APP KEY HERE
   clusterName: <CLUSTER_NAME> #<<<<<ENTER YOUR Cluster Name HERE
-  site: datadoghq.com  #<<<<<ENTER YOUR SITE (US1)
+  site: ap1.datadoghq.com  #<<<<<ENTER YOUR SITE (US1)
   collectEvents: true
   tags: []
   kubelet:

@@ -1,0 +1,29 @@
+init_config:
+
+logs:
+  - type: windows_event
+    channel_path: Security
+    source: windows.events
+    service: Windows
+
+  # collect Critical, Warning, and Error events
+  - type: windows_event
+    channel_path: Application
+    source: windows.events
+    service: Windows       
+    # query: '*[System[(Level=1 or Level=2 or Level=3)]]' You can use the query, as well as the log_processing_rules regex option, 
+    # to filter event logs. Datadog recommends using the query option which is faster at high rates of Windows Event Log generation and requires less CPU and memory than the log_processing_rules filters. 
+
+  - type: windows_event
+    channel_path: System
+    source: windows.events
+    service: Windows       
+    #log_processing_rules:
+    #  - type: include_at_match
+    #    name: system_errors_and_warnings
+    #    pattern: '"level":"((?i)warning|error)"'
+
+  - type: windows_event
+    channel_path: Setup
+    source: windows.events
+    service: Windows       

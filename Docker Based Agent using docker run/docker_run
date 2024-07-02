@@ -2,7 +2,7 @@ docker run -d --name dd-agent \
 --cgroupns host \
 --pid host \
 -e DD_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
--e DD_SITE="datadoghq.com" \
+-e DD_SITE="ap1.datadoghq.com" \
 -e DD_SYSTEM_PROBE_NETWORK_ENABLED=true \
 -e DD_PROCESS_AGENT_ENABLED=true \
 -e DD_LOGS_ENABLED=true \
