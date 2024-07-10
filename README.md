@@ -13,7 +13,7 @@ Step3.
 Step4.  
 
 **Linux**  
-Step1.  
-Step2.    
-Step3.  
-Step4.  
+Step1. LinuxサーバにAgentをインストール後、datadog/Host Based/Linux配下すべてのファイルをDatadogフォルダ(/etc/datadog-agent/)にコピーし上書き保存  
+Step2. /etc/datadog-agent/datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI keyで入れ替えて保存    
+Step3. 以下コマンドでAgentを再起動  
+Step4. 以下コマンドでAgentのステータスを確認し、エラーがなかれば設定完了  

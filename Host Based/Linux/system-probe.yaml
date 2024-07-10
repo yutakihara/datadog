@@ -12,3 +12,9 @@ network_config:
 system_probe_config:
   process_config:
     enabled: true
+
+ ## Cloud Security Management
+runtime_security_config: 
+    enabled: true
+    remote_configuration:
+      enabled: true

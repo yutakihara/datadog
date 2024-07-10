@@ -31,3 +31,27 @@ process_config:
 # proxy:
 #   https: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTPS>:<PORT>
 #   http: http://<USERNAME>:<PASSWORD>@<PROXY_SERVER_FOR_HTTP>:<PORT>
+
+## Enable remote configuration 
+remote_configuration:
+  enabled: true
+
+## Cloud Security Posture Management
+compliance_config:
+  enabled: true
+  host_benchmarks:
+    enabled: true
+
+## Cloud Workload Security
+runtime_security_config:
+  enabled: true
+
+## SBOM + CSM(container,host) Vulnerabilities (CSM Pro) (Only Linux)
+sbom:
+ enabled: true
+ container_image:
+   enabled: true
+ host:
+   enabled: true
+container_image:
+   enabled: true
