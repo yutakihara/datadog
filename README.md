@@ -9,9 +9,9 @@
 ※注意点として、DatadogのコンフィグファイルはすべてエンコードがUTF-8であり、エンコードUTF-8を指定した上で編集するようにお願いします。
 1. WindowsサーバにAgentをインストール後、[datadog/Host Based/Windows/](https://github.com/kennethfoo24/datadog/tree/main/Host%20Based/Windows)配下すべてのファイルをDatadogフォルダ(%ProgramData%\Datadog\)にコピーし上書き保存
 2. %ProgramData%\Datadog\datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI Keyで入れ替えて保存。Windowsの場合はGUI操作からDatadogの設定ファイルの変更も可能なので、Datadog Agent Managerから（アプリケーション）を開き、Settingsタブをクリックすると設定内容を確認できます。
-![Datadog Agent ManagerのUIからAPIキーを取得する](datadog-ui-api-key.png)
+![Datadog Agent ManagerのUIからAPIキーを取得する](static/datadog-ui-api-key.png)
 3. 設定変更後、右上のSaveボタンを押した後に、Restart Agentボタンを押して、Agentを再起動します。
-![Datadog Agent ManagerのUIからAgentを再起動する](datadog-agent-manager.png)
+![Datadog Agent ManagerのUIからAgentを再起動する](static/datadog-agent-manager.png)
 4. Datadog Agent ManagerのUIから、Statusタブから、Agentのステータスを確認し、エラーがなかれば設定完了
 
 ## Linux 
