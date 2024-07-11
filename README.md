@@ -15,7 +15,7 @@
 4. Datadog Agent ManagerのUIから、Statusタブから、Agentのステータスを確認し、エラーがなかれば設定完了
 
 ## Linux 
-1. LinuxサーバにAgentをインストール後、datadog/Host Based/Linux配下すべてのファイルをDatadogフォルダ(/etc/datadog-agent/)にコピーし上書き保存  
+1. LinuxサーバにAgentをインストール後、datadog/Host Based/Linux配下すべてのファイルをDatadogディレクトリ(/etc/datadog-agent/)にコピーし上書き保存  
 2. /etc/datadog-agent/datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI keyで入れ替えて保存    
 3. 以下コマンドでAgentを再起動      
 &nbsp;&nbsp;&nbsp;Centos/Redhat/Amazon linxu: `sudo systemctl restart datadog-agent`  
