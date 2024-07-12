@@ -5,13 +5,18 @@
 また、もし設定上より詳細な内容やAgentのコマンドをご確認されたい場合は以下のオフィシャルドキュメントにてご参照お願いします。  
 &nbsp;&nbsp;&nbsp;Agentの使い方：<[https://docs.datadoghq.com/ja/agent/](https://docs.datadoghq.com/ja/agent/basic_agent_usage/?tab=Linux)>
 
+##  共通 - Datadog UIからAPI Keyを入手する方法
+1. UIのアカウントボタンを押し、メニューからAPI keysをクリック  
+![Datadog UIからAPIキーを取得する](static/datadog_api_ui_1.png)
+2. 利用するAPI Keyを選択し、ダイアログのCopyボタンをクリックし、どこかでペーストして退避  
+![Datadog UIからAPIキーを取得する](static/datadog_api_ui_2.png)
+
 ## Windows
 ※注意点として、DatadogのコンフィグファイルはすべてエンコードがUTF-8であり、エンコードUTF-8を指定した上で編集するようにお願いします。
 1. WindowsサーバにAgentをインストール後、[datadog/Host Based/Windows/](https://github.com/kennethfoo24/datadog/tree/main/Host%20Based/Windows)配下すべてのファイルをDatadogフォルダ(%ProgramData%\Datadog\)にコピーし上書き保存
 2. %ProgramData%\Datadog\datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI Keyで入れ替えて保存。Windowsの場合はGUI操作からDatadogの設定ファイルの変更も可能なので、Datadog Agent Managerから（アプリケーション）を開き、Settingsタブをクリックすると設定内容を確認できます。
-![Datadog Agent ManagerのUIからAPIキーを取得する](static/datadog-ui-api-key.png)
+![Datadog Agent ManagerのUIから設定変更](static/datadog_agent_manager_settings.png)
 3. 設定変更後、右上のSaveボタンを押した後に、Restart Agentボタンを押して、Agentを再起動します。
-![Datadog Agent ManagerのUIからAgentを再起動する](static/datadog-agent-manager.png)
 4. Datadog Agent ManagerのUIから、Statusタブから、Agentのステータスを確認し、エラーがなかれば設定完了
 
 ## Linux 
