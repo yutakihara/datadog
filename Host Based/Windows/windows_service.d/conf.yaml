@@ -8,7 +8,7 @@ init_config:
     # service: <SERVICE>
 
 instances:
-  ## Add your Windows services
+  ## Edit your own Windows services
   - services:
     - UserManager
     - W32Time
