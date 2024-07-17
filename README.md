@@ -19,6 +19,7 @@
 　・Windowsのイベントログ(Application, Security, System, Setup)を収集  
 　・Windowsサーバ上のネットワークパフォーマンス監視  
 　・Windowsサーバ上のOS脆弱性やコンテナ脆弱性の検知  
+　・Windowsサーバ上の異常プロセス実行やファイル整合性などワークロードセキュリティの監視
 
 ※注意点として、DatadogのコンフィグファイルはすべてエンコードがUTF-8であり、エンコードUTF-8を指定した上で編集するようにお願いします。
 1. WindowsサーバにAgentをインストール後、[datadog/Host Based/Windows/](https://github.com/kennethfoo24/datadog/tree/main/Host%20Based/Windows)配下すべてのファイルをDatadogフォルダ(%ProgramData%\Datadog\)にコピーし上書き保存
@@ -33,6 +34,7 @@
 　・Process監視  
 　・Linuxサーバ上のネットワークパフォーマンス監視  
 　・Linuxサーバ上のOS脆弱性やコンテナ脆弱性の検知  
+　・Linuxサーバ上の異常プロセス実行やファイル整合性などワークロードセキュリティの監視
 
 1. LinuxサーバにAgentをインストール後、datadog/Host Based/Linux配下すべてのファイルをDatadogディレクトリ(/etc/datadog-agent/)にコピーし上書き保存  
 2. /etc/datadog-agent/datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI keyで入れ替えて保存    
