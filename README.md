@@ -12,6 +12,14 @@
 ![Datadog UIからAPIキーを取得する](static/datadog_api_ui_2.png)
 
 ## Windows
+テンプレート利用によって実現できることは以下となります。  
+　・Windowsサーバのメトリクス収集  
+　・Process監視  
+　・Windows Service監視  
+　・Windowsのイベントログ(Application, Security, System, Setup)を収集  
+　・Windowsサーバ上のネットワークパフォーマンス監視  
+　・Windowsサーバ上のOS脆弱性やコンテナ脆弱性の検知  
+
 ※注意点として、DatadogのコンフィグファイルはすべてエンコードがUTF-8であり、エンコードUTF-8を指定した上で編集するようにお願いします。
 1. WindowsサーバにAgentをインストール後、[datadog/Host Based/Windows/](https://github.com/kennethfoo24/datadog/tree/main/Host%20Based/Windows)配下すべてのファイルをDatadogフォルダ(%ProgramData%\Datadog\)にコピーし上書き保存
 2. %ProgramData%\Datadog\datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI Keyで入れ替えて保存。Windowsの場合はGUI操作からDatadogの設定ファイルの変更も可能なので、Datadog Agent Managerから（アプリケーション）を開き、Settingsタブをクリックすると設定内容を確認できます。
@@ -20,6 +28,12 @@
 4. Datadog Agent ManagerのUIから、Statusタブから、Agentのステータスを確認し、エラーがなかれば設定完了
 
 ## Linux 
+テンプレート利用によって実現できることは以下となります。  
+　・Linuxサーバのメトリクス収集  
+　・Process監視  
+　・Linuxサーバ上のネットワークパフォーマンス監視  
+　・Linuxサーバ上のOS脆弱性やコンテナ脆弱性の検知  
+
 1. LinuxサーバにAgentをインストール後、datadog/Host Based/Linux配下すべてのファイルをDatadogディレクトリ(/etc/datadog-agent/)にコピーし上書き保存  
 2. /etc/datadog-agent/datadog.yaml を編集し、<API_KEY>のところにDatadogのAPI keyで入れ替えて保存    
 3. 以下コマンドでAgentを再起動      
