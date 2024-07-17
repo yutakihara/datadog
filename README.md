@@ -26,4 +26,11 @@
 &nbsp;&nbsp;&nbsp;Centos/Redhat/Amazon linxu: `sudo systemctl restart datadog-agent`  
 &nbsp;&nbsp;&nbsp;Ubuntu/Debian: `sudo service datadog-agent restart`  
 4. 以下コマンドでAgentのステータスを確認し、エラーがなかれば設定完了  
-&nbsp;&nbsp;&nbsp;`sudo datadog-agent status`  
+&nbsp;&nbsp;&nbsp;`sudo datadog-agent status`
+
+## 共通 - Datadog UIから設定確認
+1. Datadog UIの左ペインからInfrastructure - Hosts順でクリックし、対象ホストが存在するかを確認
+![Datadog UIでの動作確認](static/datadog_ui_host.png)
+2. 対象ホストをクリックし、タブを切り替えてホストの詳細を確認できる。Processesのタブにてプロセスを確認
+![Datadog UIでの動作確認](static/datadog_host_win.png)
+![Datadog UIでの動作確認](static/datadog_host_linux.png)
