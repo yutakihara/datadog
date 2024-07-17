@@ -5,7 +5,6 @@
 ## Windows: %ProgramData%\Datadog\datadog.yaml
 api_key: <API_KEY>
 site: ap1.datadoghq.com # Japan region
-env: <Environment>
 
 ## Tags https://docs.datadoghq.com/tagging/
 #tags:
