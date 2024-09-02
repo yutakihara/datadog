@@ -4,7 +4,7 @@
 ## Linux: /etc/datadog-agent/datadog.yaml
 ## Windows: %ProgramData%\Datadog\datadog.yaml
 api_key: <API_KEY>
-site: ap1.datadoghq.com # Japan region
+site: datadoghq.com # Japan region
 
 ## Tags https://docs.datadoghq.com/tagging/
 #tags:
